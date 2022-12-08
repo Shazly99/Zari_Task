@@ -1,0 +1,113 @@
+@import '../../styles/varibale';
+
+@mixin flex($dis, $justifyContent, $alignItems, $dir) {
+    display: $dis;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $dir;
+}
+
+
+
+
+.app__features {
+
+    margin-top: 73px !important;
+
+    @media screen and (max-width:900px) {
+        margin: auto;
+    }
+
+    .app__features-img {
+        @include flex(flex, center, center, column);
+        background: #012C57;
+        border-radius: 8px;
+        height: 371px;
+        width: 286px;
+
+        @media screen and (max-width:767px) {}
+
+        .app__features-h1 {
+            /* Section Title */
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 31px;
+            line-height: 38px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: -0.41px;
+
+            /* white */
+
+            color: #FFFFFF;
+        }
+
+        img {
+            width: 245px !important;
+        }
+    }
+
+    .app__features-content {
+        padding-top: 10px;
+        @include flex(flex, flex-start, center, row);
+
+        .app__features-content_card {
+
+            @media screen and (max-width:1024px) {
+                margin-top: 15px;
+                width: 284px !important;
+            }
+
+            background: #FFFFFF;
+            box-shadow: 0px 0px 7px rgba(191, 191, 191, 0.25);
+            border-radius: 8px;
+            padding: 24px 16px;
+            @include flex(flex, flex-start, center, row);
+            gap: 17px;
+            margin-bottom: 24px;
+
+            .app__features-content-dec {
+                /* Small Text */
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.41px;
+
+                color: #000000;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        width: calc(100% - 120px) !important;
+        margin: auto;
+    }
+
+    .app__features-row-sm {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+ 
+    .app__features-content {
+        display: flex;
+        flex-direction: column !important;
+
+        div {
+            .app__features-content_card {
+                width: 100% !important;
+
+            }
+        }
+    }
+}

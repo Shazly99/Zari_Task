@@ -1,0 +1,140 @@
+@import '../../styles/varibale';
+
+
+@mixin flex($dis, $justifyContent, $alignItems, $dir) {
+    display: $dis !important;
+    justify-content: $justifyContent !important;
+    align-items: $alignItems !important;
+    flex-direction: $dir !important;
+}
+
+
+.app__OurApp {
+    // padding-top: 134px !important;
+
+    .app__OurApp-main {
+        display: flex;
+        align-items: center;
+        .app__OurApp-left{
+            width: 50% !important;
+        }
+        .app__OurApp-right{
+            width: 50% !important;
+        }
+        @media screen and (max-width:900px) {
+            flex-direction: column; 
+            .app__OurApp-left{
+                width: 70% !important;
+
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+            .app__OurApp-left{
+                width: 147% !important;
+            }
+            .app__OurApp-right{ 
+                width: 147% !important;
+            }
+        }
+    }
+
+    .app__OurApp-h1 {
+        /* Section Title */
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 38px;
+        letter-spacing: -0.41px;
+        color: #000000;
+    }
+
+    .app__OurApp-p {
+        /* Small Text */
+        width: 90%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: -0.41px;
+
+        color: #000000;
+
+        opacity: 0.6;
+    }
+
+    .app__OurApp-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px;
+
+        button {
+            width: 321px;
+            height: 60px;
+            /* Main Color */
+
+            /* white */
+
+            border: 1px solid $mainColor;
+            border-radius: 8px;
+            @include flex(flex, flex-start, center, row);
+            gap: 12px;
+        }
+
+        .app__home-btn-get {
+            background-color: $mainColor;
+            color: #FFFFFF;
+            padding-left: 23px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            letter-spacing: -0.41px;
+
+            /* white */
+
+            color: #FFFFFF;
+        }
+
+        .app__home-btn-watch {
+            background-color: $colorLight;
+            padding-left: 34px;
+
+            color: $mainColor;
+            padding-left: 23px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            letter-spacing: -0.41px;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    
+}
+@media screen and (max-width:767px) {
+
+
+    .app__OurApp-left {
+        @include flex(flex, center, center, column); 
+        width: 100% !important;
+    }
+
+    .app__OurApp-img {
+
+        width: 410px !important;
+    }
+}

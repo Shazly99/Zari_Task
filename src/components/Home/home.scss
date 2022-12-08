@@ -1,0 +1,135 @@
+@import '../../styles/varibale';
+
+
+@mixin flex($dis, $justifyContent, $alignItems, $dir) {
+    display: $dis;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $dir;
+}
+.app__home {
+    background-image: url('../../assets/Image/Rectangle\ 143.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 374px;
+
+    @include flex(flex, center, center, column);
+
+
+    .app__home-h1 {
+        width: 829px;
+        height: 68px;
+
+        /* Header */
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 68px;
+        text-align: center;
+        letter-spacing: -0.41px;
+
+        /* Main Color */
+
+        color: #012C57;
+    }
+
+    .app__home-p {
+        width: 711px;
+        height: 120px;
+
+
+        /* H5 */
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+
+        text-align: center;
+        letter-spacing: -0.41px;
+
+        /* Black */
+
+        color: #000000;
+
+        opacity: 0.7;
+
+        margin-bottom: 32px;
+    }
+
+    .app__home-btn {
+        display: flex;
+        gap: 15px;
+
+        button {
+            @include flex(flex, center, center, row);
+            gap: 6px;
+            border-radius: 8px;
+            border: none;
+            width: 220px;
+            height: 50px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height, or 122% */
+
+            letter-spacing: -0.41px;
+
+            /* Main Color */
+
+        }
+
+        .app__home-btn-get {
+            /* Main Color */
+            background: #012C57;
+            color: #FFFFFF;
+        }
+
+        .app__home-btn-watch {
+            color: #012C57;
+            border: 1px solid #012C57;
+            background-color: #FFFFFF;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .app__home-h1 {
+            width: 90% !important;
+            font-size: 40px !important;
+        }
+        .app__home-p{
+        width: 90%;
+
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .app__home-h1 {
+            font-size: 30px !important;
+            
+        }
+        .app__home-p{
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .app__home-h1 {
+            font-size: 20px !important;
+            
+        }
+        .app__home-p{
+            font-size: 12px;
+        }
+        .app__home-btn{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './varibale';
+
+@mixin flex($dis, $justifyContent, $alignItems, $dir) {
+    display: $dis;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $dir;
+}
+
+.container-fluid {
+    width: calc(100% - 120px) !important;
+    margin: auto !important;
+}
+
+
