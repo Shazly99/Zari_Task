@@ -1,0 +1,91 @@
+@import '../../styles/varibale';
+
+
+.app__footer {
+    padding-top: 24px;
+    padding-bottom:20px ;
+    background-color: $mainColor;
+    .app__footer-width{
+        width: 90%;
+        margin: auto;
+    }
+    .app__footer-icons {
+        display: flex;
+        gap: 12px;
+        margin-top: 41px;
+
+        >.icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: $colorLight;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.app__footer-nav {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+}
+ul {
+    list-style: none;
+    padding: 0 !important;  
+    margin: 0; 
+
+    li { 
+        padding: 9px 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px; 
+
+        color: #ECECEC;
+
+        opacity: 0.8;
+    }
+}
+
+.app__footer-contant{
+    ul{
+        li,a{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            text-decoration: none;
+            color: #ECECEC;
+            cursor: pointer;
+            opacity: 0.8;
+            .icon{
+                background-color: white; 
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .app__footer-width {
+        >div{
+            margin-top: 50px;
+        }
+    }
+}

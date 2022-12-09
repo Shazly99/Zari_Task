@@ -20,6 +20,10 @@
         }
         .app__OurApp-right{
             width: 50% !important;
+            img{
+                width: 409px !important;
+                height: 393px !important;
+            }
         }
         @media screen and (max-width:900px) {
             flex-direction: column; 
@@ -35,7 +39,10 @@
                 width: 147% !important;
             }
             .app__OurApp-right{ 
-                width: 147% !important;
+                width: 100% !important;
+                img{
+                    display: none !important;
+                }
             }
         }
     }

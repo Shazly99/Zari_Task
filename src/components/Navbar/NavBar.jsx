@@ -30,8 +30,8 @@ function NavBar() {
             </Nav>
 
             <div className="nav__btn d-flex  ">
-              <Button className='btn__nav-trans' variant="outline-success">
-                <Icons.Trans/>
+              <Button className='btn__nav-trans ' variant="outline-success">
+                <Icons.globe/>
                 En</Button>
               <Button className='btn__nav-login' >Sign In</Button>
 

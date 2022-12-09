@@ -1,3 +1,5 @@
+import Icons from '../../constants/Icons';
+
 const data=[
     {
         Features:'Admin Users',
@@ -22,38 +24,38 @@ const data=[
     },
     {
         Features:'Daily Report',
-        Silver:'2 Admins',
-        Gold:'3 Admins',
-        Super:'5 Admins',
-        Elite:'2 Admins'
+        Silver:<Icons.check color='#012C57' size={21}/>,
+        Gold:<Icons.check color='#012C57' size={21}/>,
+        Super:<Icons.check color='#012C57' size={21}/>,
+        Elite:<Icons.check color='#012C57' size={21}/>
     },
     {
         Features:'Find Sales Location',
-        Silver:'2 Admins',
-        Gold:'3 Admins',
-        Super:'5 Admins',
-        Elite:'2 Admins'
+        Silver:<Icons.check color='#012C57' size={21}/>,
+        Gold:<Icons.check color='#012C57' size={21}/>,
+        Super:<Icons.check color='#012C57' size={21}/>,
+        Elite:<Icons.check color='#012C57' size={21}/>
     },
     {
         Features:'Route',
-        Silver:'2 Admins',
-        Gold:'3 Admins',
-        Super:'5 Admins',
-        Elite:'2 Admins'
+        Silver:<Icons.check color='#012C57' size={21}/>,
+        Gold:<Icons.check color='#012C57' size={21}/>,
+        Super:<Icons.check color='#012C57' size={21}/>,
+        Elite:<Icons.check color='#012C57' size={21}/>
     },
     {
         Features:'Route Check Report',
-        Silver:'2 Admins',
-        Gold:'3 Admins',
-        Super:'5 Admins',
-        Elite:'2 Admins'
+        Silver:<Icons.check color='#012C57' size={21}/>,
+        Gold:<Icons.check color='#012C57' size={21}/>,
+        Super:<Icons.check color='#012C57' size={21}/>,
+        Elite:<Icons.check color='#012C57' size={21}/>
     },
     {
         Features:'Route Map Report',
-        Silver:'2 Admins',
-        Gold:'3 Admins',
-        Super:'5 Admins',
-        Elite:'2 Admins'
+        Silver:<Icons.check color='#012C57' size={21}/>,
+        Gold:<Icons.check color='#012C57' size={21}/>,
+        Super:<Icons.check color='#012C57' size={21}/>,
+        Elite:<Icons.check color='#012C57' size={21}/>
     },
 
     // {

@@ -3,14 +3,15 @@ import { Container, Table } from 'react-bootstrap'
 import './Plans.scss';
 import data from './data';
 import Button from './Button';
+ 
 function Plans() {
   return (
     <>
-      <Container className='text-center' style={{ marginTop: '100px', marginBottom: '100px' }}>
+      <div className='container overflow-hidden text-center' style={{ marginTop: '100px', marginBottom: '100px' }}>
         <h1 className='' style={{ marginBottom: '24px' }}>Plans</h1>
         <div className="table-responsive">
 
-          <Table striped className='rounded-3 w-100'>
+          <Table striped responsive={true} className='rounded-3 w-100'>
             <thead>
               <tr >
                 <th>Features</th>
@@ -36,17 +37,24 @@ function Plans() {
               }
 
               <tr className='last_col'>
-                <td  style={{ backgroundColor: '#E4E4E4' }}>Price Map Sales </td>
-                <td    >4.99$ <span className='re__span'>pre month</span>  <Button title='Order'/> </td>
-                <td className='position-relative' >3.99$ <span className='re__span'>pre month</span> <Button title='Order'/>  </td>
-                <td   >2.99$ <span className='re__span'>pre month</span>  <Button title='Order'/> </td>
-                <td  >-  <Button title='Order'/> </td>
-        
+                <td style={{ backgroundColor: '#E4E4E4' }}>Price Map Sales </td>
+                <td>4.99$ <span className='re__span'>per month</span>   </td>
+                <td className='position-relative' >3.99$ <span className='re__span'>per month</span>   </td>
+                <td>2.99$ <span className='re__span'>per month</span>   </td>
+                <td>-  </td>
+              </tr>
+
+              <tr className='last_border-0'>
+                <td> </td>
+                <td className='rounded-bottom m-0 pb-0'>  <Button title='Order' /> </td>
+                <td className='rounded-bottom pb-0' >  <Button title='Order' /> </td>
+                <td className='rounded-bottom pb-0'>  <Button title='Order' /> </td>
+                <td className='rounded-bottom pb-0'>  <Button title='Contact Us' /> </td>
               </tr>
             </tbody>
           </Table>
-        </div> 
-      </Container>
+        </div>
+      </div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { BsFacebook as facebook } from "react-icons/bs";
+import { GrFacebookOption as facebook } from "react-icons/gr";
 import { AiOutlineInstagram as instagram } from "react-icons/ai";
 import { SiTiktok as tiktok } from "react-icons/si";
 import { AiFillYoutube as youtube } from "react-icons/ai";
@@ -13,13 +13,24 @@ import { BiDownload as download } from "react-icons/bi";
 import { AiFillPlayCircle as play } from "react-icons/ai";
 import { BsApple as Ios } from "react-icons/bs";
 import { FaGooglePlay as google } from "react-icons/fa";
+import { AiFillCheckCircle as check } from "react-icons/ai";
+import { FaLinkedinIn as Linkedin } from "react-icons/fa";
+import { FaTwitter as Twitter } from "react-icons/fa";
+import { IoCallOutline as call } from "react-icons/io5";
+import { IoLogoWhatsapp as Whatsapp } from "react-icons/io";
+import { BsEnvelope as Envelope } from "react-icons/bs";
+import { BsGlobe as globe } from "react-icons/bs";
 
 export default{
+    call,
     facebook,
     instagram,
     tiktok,
     youtube,
+    Twitter,
+    Linkedin,
     offline,
+    Whatsapp,
     Robot,
     Window,
     Plus,
@@ -29,5 +40,8 @@ export default{
     download,
     play, 
     Ios,
-    google
+    google,
+    check,
+    Envelope,
+    globe
 }
