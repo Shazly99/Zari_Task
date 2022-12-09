@@ -7,7 +7,7 @@ import Button from './Button';
 function Plans() {
   return (
     <>
-      <div className='container overflow-hidden text-center' style={{ marginTop: '100px', marginBottom: '100px' }}>
+      <div className='container overflow-hidden text-center' style={{ marginTop: '100px', marginBottom: '100px' }} id='plans'>
         <h1 className='' style={{ marginBottom: '24px' }}>Plans</h1>
         <div className="table-responsive">
 

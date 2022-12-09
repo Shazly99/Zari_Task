@@ -21,10 +21,10 @@ function NavBar() {
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
             >
-              <Nav.Link href="#action1" className='active'>Home</Nav.Link>
-              <Nav.Link href="#action2">Features</Nav.Link>
-              <Nav.Link href="#action3">OurApp</Nav.Link>
-              <Nav.Link href="#action4">Plans</Nav.Link>
+              <Nav.Link href="#home"   className='active'>Home</Nav.Link>
+              <Nav.Link href="#Features"  >Features</Nav.Link>
+              <Nav.Link href="#ourapp"  >OurApp</Nav.Link>
+              <Nav.Link href="#plans"  >Plans</Nav.Link>
 
 
             </Nav>

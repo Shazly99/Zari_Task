@@ -8,7 +8,7 @@ import './features.scss'
 function Features() { 
   return (
     <>
-      <div className="app__features">
+      <div className="app__features" id='Features'>
         <div className="container">
           <Row className='app__features-row-sm'>
             <div className='col-md-3   d-flex justify-content-center'>
