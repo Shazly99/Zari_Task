@@ -15,7 +15,7 @@ function Footer() {
           </Col>
           
           <Col md={3} className='d-flex flex-column justify-content-center align-items-start  '>
-            <h3 className='app__footer-nav app__footer-sm mb-3'>Navigate</h3>
+            <h3 className='app__footer-nav app__footer-sm '>Navigate</h3>
             <ul  className='  app__footer-sm app__footer-sm-center'>
               <li>Home</li>
               <li>Features</li>
