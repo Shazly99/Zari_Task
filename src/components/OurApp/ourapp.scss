@@ -9,8 +9,7 @@
 }
 
 
-.app__OurApp {
-    // padding-top: 134px !important;
+.app__OurApp { 
 
     .app__OurApp-main {
         display: flex;
@@ -59,8 +58,7 @@
         color: #000000;
     }
 
-    .app__OurApp-p {
-        /* Small Text */
+    .app__OurApp-p { 
         width: 90%;
         font-family: 'Montserrat';
         font-style: normal;
@@ -82,10 +80,7 @@
 
         button {
             width: 321px;
-            height: 60px;
-            /* Main Color */
-
-            /* white */
+            height: 60px; 
 
             border: 1px solid $mainColor;
             border-radius: 8px;
@@ -102,39 +97,30 @@
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
-            line-height: 22px;
-            /* identical to box height */
+            line-height: 22px; 
 
-            letter-spacing: -0.41px;
-
-            /* white */
+            letter-spacing: -0.41px; 
 
             color: #FFFFFF;
         }
 
         .app__home-btn-watch {
             background-color: $colorLight;
-            padding-left: 34px;
-
+            padding-left: 34px; 
             color: $mainColor;
             padding-left: 23px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
-            line-height: 22px;
-            /* identical to box height */
+            line-height: 22px; 
 
             letter-spacing: -0.41px;
         }
     }
 }
-@media screen and (max-width:1024px) {
-    
-}
-@media screen and (max-width:767px) {
-
-
+   
+@media screen and (max-width:767px) { 
     .app__OurApp-left {
         @include flex(flex, center, center, column); 
         width: 100% !important;

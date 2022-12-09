@@ -7,9 +7,6 @@
     flex-direction: $dir;
 }
 
-
-
-
 .app__features {
 
     margin-top: 73px !important;
@@ -28,19 +25,14 @@
         @media screen and (max-width:767px) {}
 
         .app__features-h1 {
-            /* Section Title */
-
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
             font-size: 31px;
             line-height: 38px;
-            /* identical to box height */
 
             text-align: center;
             letter-spacing: -0.41px;
-
-            /* white */
 
             color: #FFFFFF;
         }
@@ -70,8 +62,6 @@
             margin-bottom: 24px;
 
             .app__features-content-dec {
-                /* Small Text */
-
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 400;
@@ -98,7 +88,7 @@
 }
 
 @media screen and (max-width:1000px) {
- 
+
     .app__features-content {
         display: flex;
         flex-direction: column !important;

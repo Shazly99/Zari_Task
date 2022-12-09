@@ -14,7 +14,7 @@ function Footer() {
             <Component.Social/>
           </Col>
           
-          <Col md={3} className='d-flex flex-column justify-content-center align-items-start'>
+          <Col md={3} className='d-flex flex-column justify-content-center align-items-start '>
             <h3 className='app__footer-nav'>Navigate</h3>
             <ul>
               <li>Home</li>

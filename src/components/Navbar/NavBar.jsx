@@ -34,7 +34,6 @@ function NavBar() {
                 <Icons.globe/>
                 En</Button>
               <Button className='btn__nav-login' >Sign In</Button>
-
             </div>
           </Navbar.Collapse>
         </Container>
