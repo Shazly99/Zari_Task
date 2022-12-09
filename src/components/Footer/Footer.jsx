@@ -14,9 +14,9 @@ function Footer() {
             <Component.Social/>
           </Col>
           
-          <Col md={3} className='d-flex flex-column justify-content-center align-items-start '>
-            <h3 className='app__footer-nav'>Navigate</h3>
-            <ul>
+          <Col md={3} className='d-flex flex-column justify-content-center align-items-start  '>
+            <h3 className='app__footer-nav app__footer-sm mb-3'>Navigate</h3>
+            <ul  className='  app__footer-sm app__footer-sm-center'>
               <li>Home</li>
               <li>Features</li>
               <li>Our app</li>
@@ -24,7 +24,7 @@ function Footer() {
             </ul>
           </Col>
 
-          <Col md={3} className='app__footer-contant d-flex flex-column justify-content-center align-items-start'>
+          <Col md={3} className='app__footer-sm app__footer-contant d-flex flex-column justify-content-center align-items-start'>
             <Component.Contact/>
           </Col>
         </Row>
