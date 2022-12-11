@@ -13,3 +13,24 @@
 }
 
 
+@media screen and (max-width:1024px) {
+    .container-fluid {
+        width: calc(100% - 120px) !important;
+        margin: auto !important;
+    }
+    .container {
+        width: calc(100% - 120px) !important;
+        margin: auto !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    // .container-fluid {
+    //     width: 80%!important;
+    //     margin: auto !important;
+    // }
+    .container {
+        width: calc(100% - 120px) !important;
+        margin: auto !important;
+    }
+}

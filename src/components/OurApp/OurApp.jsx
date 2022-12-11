@@ -7,8 +7,8 @@ import Img from '../../assets/Img';
 function OurApp() {
   return (
     <>
-      <div className="app__OurApp container-fluid mt-5" id='ourapp'>
-        <Container>
+      <div className="app__OurApp container mt-5" id='ourapp'>
+   
 
         <div className='app__OurApp-main'>
           <div className='app__OurApp-left'>
@@ -26,8 +26,8 @@ function OurApp() {
           <img src={Img.Ourapp} className='app__OurApp-img'  />
           </div>
         </div>
-        </Container>
-      </div>
+        </div>
+ 
 
     </>
   )
