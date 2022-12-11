@@ -8,13 +8,13 @@ import './features.scss'
 function Features() { 
   return (
     <>
-      <div className="app__features container" id='Features'>
- 
+      <div className="app__features" id='Features'>
+        <div className="container">
           <Row className='app__features-row-sm'>
             <div className='col-md-3   d-flex justify-content-center'>
               <div className="app__features-img">
                 <h3 className='app__features-h1'>Features</h3>
-                <img src={Img.Features} className=' w-100' />
+                <img src={Img.Features} className='w-100' />
               </div>
             </div>
 
@@ -34,7 +34,7 @@ function Features() {
             </div>
           </Row>
         </div>
-    
+      </div>
     </>
   )
 }
