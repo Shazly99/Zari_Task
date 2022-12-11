@@ -7,7 +7,7 @@ import Img from '../../assets/Img';
 function OurApp() {
   return (
     <>
-      <div className="app__OurApp container-fluid mt-5" id='ourapp'>
+      <div className="app__OurApp  container container-fluid mt-5" id='ourapp'>
         
 
         <div className='app__OurApp-main'>
