@@ -8,6 +8,8 @@ function Footer() {
   return (
     <>
       <div className="app__footer   px-3">
+        <div className="container">
+
         <Row className='app__footer-width d-flex justify-content-between align-items-center'>
 
           <Col md={2} className='d-flex flex-column justify-content-center align-items-center'>
@@ -28,6 +30,7 @@ function Footer() {
             <Component.Contact/>
           </Col>
         </Row>
+        </div>
       </div>
     </>
   )

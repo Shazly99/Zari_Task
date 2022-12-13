@@ -28,19 +28,29 @@
             flex-direction: column; 
             .app__OurApp-left{
                 width: 70% !important;
-
             }
         }
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:700px) {
             flex-direction: column;
             .app__OurApp-left{
-                width: 147% !important;
+                width: 120% !important; 
             }
             .app__OurApp-right{ 
-                width: 100% !important;
+                width: 140% !important; 
                 img{
-                    display: none !important;
+                    width: 70% !important;
+                    margin: auto;
+                }
+            }
+        }
+        @media screen and (max-width:700px) {
+  
+            .app__OurApp-right{ 
+                width: 100% !important; 
+                img{
+                    width: 90% !important;
+                    margin: auto;
                 }
             }
         }
@@ -123,11 +133,10 @@
 @media screen and (max-width:767px) { 
     .app__OurApp-left {
         @include flex(flex, center, center, column); 
-        width: 100% !important;
+        width: 90% !important;
     }
 
-    .app__OurApp-img {
-
+    .app__OurApp-img { 
         width: 410px !important;
     }
 }

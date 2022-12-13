@@ -60,6 +60,7 @@
             @include flex(flex, flex-start, center, row);
             gap: 17px;
             margin-bottom: 24px;
+            transition: all 0.5s;
 
             .app__features-content-dec {
                 font-family: 'Montserrat';
@@ -82,9 +83,7 @@
         margin: auto;
     }
 
-    .app__features-row-sm {
-        width: 100% !important;
-    }
+
 }
 
 @media screen and (max-width:1000px) {
@@ -96,8 +95,13 @@
         div {
             .app__features-content_card {
                 width: 100% !important;
-
             }
         }
+    } 
+
+    .app__features-row-sm {
+        display: flex !important;
+        justify-content: center !important;
+        
     }
 }

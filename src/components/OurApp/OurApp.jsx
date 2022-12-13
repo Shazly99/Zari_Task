@@ -10,8 +10,8 @@ function OurApp() {
       <div className="app__OurApp  container container-fluid mt-5" id='ourapp'>
 
 
-        <div className='app__OurApp-main'>
-          <div className='app__OurApp-left'>
+        <div className='app__OurApp-main ' >
+          <div className='app__OurApp-left   '>
             <h1 className='app__OurApp-h1'>Our App</h1>
             <p className='app__OurApp-p'>A new application to facilitate the follow-up of the external work team of shipping representatives or external sales personnel, and to measure the production capacity of the individual and the working hours.<br />
               Zari Falcon enables you to view everything that happens with your employee outside the company during working hours through its various services.</p>
